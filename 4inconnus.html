@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>E4I</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1300px)" href="style/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="style/phone.css">
+	<link rel="shortcut icon" href="logo/icon.png">
+</head>
+<body>
+	<header>
+		<div id="change"></div>
+			<div>
+				<a href="index.html"><img id="logo" title="Aller a l'accueil" alt="Logo Maths' Aho" src="logo/logo.png"></a>
+				<div id="auteur">
+					<h3>En colaboration avec:</h3>
+					<ul>
+						<li>RAZAFIMAHATRATRA Andrianina Lionnel</li>
+						<li>RAKOTONIRINA Aldo Luc Chirac</li>
+						<li>TSIAFADRAY Zidane Swaters Paters</li>
+					</ul>
+				</div>
+			</div>
+	</header>
+	<nav>
+		<div class="btn1">
+			<span></span>
+		</div>
+		<div class="menu11 nav_c">
+			<a class="menu" href="index.html">Sary miovaova</a>
+			<a href="2ndsimple.html">Ekasiona JS</a>
+			<a href="2ndjq.html">Ekasiona JQ</a>
+			<a href="4inconnus.html">Ekasiona 4</a>
+		</div>
+		<ul>
+			<li><a href="index.html" title="Accueil">Sary miovaova</a></li>
+			<li>
+				<a href="#" title="Equation 2nd degrés">Ekasiona faha-2</a>
+				<ul>
+					<li><a href="2ndsimple.html" title="Equation 2nd degrés">Javascript</a></li>
+					<li><a href="2ndjq.html" title="Equation 2nd degrés">JQuery</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="#" title="Equation à 4 inconnus">Ekasiona tsy fantatra 4</a></li>
+			<script src="jquery.min.js"></script>
+		</ul>
+	</nav>
+	<section>
+		<h1>Ekasiona misy tsy fantatra anaky 4</h1>
+	    <p>Fenoy ary ireo koefisiona ilaina fa tadiaviko ny x, y, z ary m</p>
+	    <p>
+	    	<strong class="bold">a1</strong>x + <strong class="bold">b1</strong>y + <strong class="bold">c1</strong>z + <strong class="bold">d1</strong>m = <strong class="bold">e1</strong><br>
+	    	<strong class="bold">a2</strong>x + <strong class="bold">b2</strong>y + <strong class="bold">c2</strong> z +<strong class="bold">d2</strong>m = <strong class="bold">e2</strong><br>
+	    	<strong class="bold">a3</strong>x + <strong class="bold">b3</strong>y + <strong class="bold">c3</strong>z + <strong class="bold">d3</strong>m = <strong class="bold">e3</strong><br>
+	    	<strong class="bold">a4</strong>x + <strong class="bold">b4</strong>y + <strong class="bold">c4</strong>z + <strong class="bold">d4</strong>m = <strong class="bold">e4</strong><br>
+	    </p>
+
+	    <form name="apidiro" action="javascript:kajy()">
+	    	a1: <input step="0.01" placeholder="0,00" type="number" name="a1" size="10" class="kajy" required="">
+	    	b1: <input step="0.01" placeholder="0,00" type="number" name="b1" size="10" class="kajy" required="">
+	    	c1: <input step="0.01" placeholder="0,00" type="number" name="c1" size="10" class="kajy" required="">
+	    	d1: <input step="0.01" placeholder="0,00" type="number" name="d1" size="10" class="kajy" required=""><strong>  =></strong>
+	    	e1: <input step="0.01" placeholder="0,00" type="number" name="e1" size="10" class="kajy" required=""><br>
+
+	    	a2: <input step="0.01" placeholder="0,00" type="number" name="a2" size="10" class="kajy" required="">
+	    	b2: <input step="0.01" placeholder="0,00" type="number" name="b2" size="10" class="kajy" required="">
+	    	c2: <input step="0.01" placeholder="0,00" type="number" name="c2" size="10" class="kajy" required="">
+	    	d2: <input step="0.01" placeholder="0,00" type="number" name="d2" size="10" class="kajy" required=""><strong>  =></strong>
+	    	e2: <input step="0.01" placeholder="0,00" type="number" name="e2" size="10" class="kajy" required=""><br>
+
+	    	a3: <input step="0.01" placeholder="0,00" type="number" name="a3" size="10" class="kajy" required="">
+	    	b3: <input step="0.01" placeholder="0,00" type="number" name="b3" size="10" class="kajy" required="">
+	    	c3: <input step="0.01" placeholder="0,00" type="number" name="c3" size="10" class="kajy" required="">
+	    	d3: <input step="0.01" placeholder="0,00" type="number" name="d3" size="10" class="kajy" required=""><strong>  =></strong>
+	    	e3: <input step="0.01" placeholder="0,00" type="number" name="e3" size="10" class="kajy" required=""><br>
+
+	    	a4: <input step="0.01" placeholder="0,00" type="number" name="a4" size="10" class="kajy" required="">
+	    	b4: <input step="0.01" placeholder="0,00" type="number" name="b4" size="10" class="kajy" required="">
+	    	c4: <input step="0.01" placeholder="0,00" type="number" name="c4" size="10" class="kajy" required="">
+	    	d4: <input step="0.01" placeholder="0,00" type="number" name="d4" size="10" class="kajy" required=""><strong>  =></strong>
+	    	e4: <input step="0.01" placeholder="0,00" type="number" name="e4" size="10" class="kajy" required=""><br><br><br>
+
+	    	<input class="alefa" type="submit" name="Kajina" value="Kajina" title="Calculer">&emsp;
+	    	<input class="alefa" type="button" onclick="mamafa()" name="Averina" value="Averina" title="Reset">
+	    </form>
+
+	    <div id="sortie">
+	    	<p id="fivoahana"/><br><br>
+		</div>
+
+	    <footer>
+	    	<p>Copyright © 2019 Maths' Aho Inc. | All rights reserved.</p>
+	    	<a target="blank" href="http://www.facebook.com"><img class="foot" alt="Logo Facebook" title="Facebook" src="logo/facebook.png"></a>
+	    	<a target="blank" href="http://www.youtube.com"><img class="foot" alt="Logo YouTube" title="Youtube" src="logo/youtube.png"></a>
+	    	<a target="blank" href="http://www.twitter.com"><img class="foot" alt="Logo Twitter" title="Twitter" src="logo/twitter.png"></a>
+	    </footer>
+	</section>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+body
+	{
+		background-image: url("../img/page.jpg");
+		color: rgb(89, 205, 255);
+		background-size: cover;
+		background-attachment: scroll;
+		margin: 0;
+		padding: 0;
+		font-family: Comic sans MS;
+	}
+
+@media screen and (min-width: 600px)
+{
+	.menu11
+	{
+		display: none;
+	}
+}
+
+*
+	{
+		outline: none;
+	}
+
+header
+	{
+		background: black;
+		width: 100%;
+		height: 240px;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+#change
+	{
+		margin: 0;
+		background: url("../img/fond.jpg");
+		background-size: cover;
+		width: 100%;
+		animation: changing 7500ms infinite;
+	}
+
+@keyframes changing
+	{
+		0%{opacity: 0}
+		10%{opacity: 1}
+		90%{opacity: 1}
+		100%{opacity: 0}
+	}
+
+section
+	{
+		text-align: center;
+		background-color: #000003e5;
+		width: 60%;
+		height: 1200px;
+		margin-left: 19%;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+footer
+	{
+		border-top: 1px solid rgb(89, 205, 255);
+		width: 100%;
+		height: 50px;
+		margin: 0;
+		margin-top: 200px;
+		padding: 5px;
+	}
+
+footer p
+	{
+		font-family: Verdana;
+		font-size: 10px;
+		color: rgb(89, 205, 255);
+	}
+
+.foot
+	{
+		padding: 10px;
+		width: 30px;
+		height: 30px;
+	}
+#logo
+	{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		width: 200px;
+		height: 200px;
+	}
+
+.menu
+	{
+		color: red;
+		border-color: red;
+	}
+
+#auteur
+	{
+		background-color: black;
+		filter: opacity(80%);
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		padding: 5px 10px;
+		border-bottom: 4px double rgb(89, 205, 255);
+		border-right: 4px double rgb(89, 205, 255);
+		border-radius: 20px 0 20px 0;
+		animation: miova 10s infinite;
+	}
+
+h1
+	{
+		margin-top: 8%;
+		animation: miova 10s infinite;
+	}
+
+@keyframes miova
+	{
+		0%{color: rgb(89, 205, 255); border-color: rgb(89, 205, 255);}
+		50%{color: red; border-color: red;}
+		100%{color: rgb(89, 205, 255); border-color: rgb(89, 205, 255);}
+	}
+
+nav
+	{
+		background-color: black;
+		width: 100%;
+		height: 50px;
+		border-top: 2px solid rgb(89, 205, 255);
+		margin-top: 0;
+		position: sticky;
+		top: 0px;
+	}
+
+nav ul
+	{
+		display: flex;
+		margin: 0;
+		padding: 0 10px;
+		float: right;
+	}
+
+nav ul li
+	{
+		list-style: none;
+	}
+
+nav ul li ul
+	{
+		display: block;
+		visibility: hidden;
+	}
+
+nav ul li ul li 
+	{
+		background-color: rgb(17, 17, 17);
+	}
+
+nav ul li:hover ul
+	{
+		visibility: visible;
+	}
+
+nav ul li a
+	{
+		display: block;
+		padding: 0 20px;
+		text-decoration: none;
+		color: rgb(89, 205, 255);
+		font-weight: bold;
+		margin-top: 10px;
+		border-bottom: 3px solid rgb(89, 205, 255);
+	}
+
+nav ul li a:hover
+	{
+		color: red;
+		border-bottom: 3px solid red;
+	}
+
+/*TSY AZO KITIHINA*/
+
+#sortie
+	{
+		width: 100%;
+		height: 270px;
+	}
+
+.kajy
+	{
+		text-align: center;
+		width: 40px;
+		height: 15px;
+		margin: 0;
+		-moz-appearance: textfield;
+
+	    --webkit-inner-spin-button
+		  {
+		    -webkit-appearance: none;
+		  }
+	}
+
+.bold
+	{
+		color: red;
+	}
+
+.alefa
+	{
+		cursor: pointer;
+		text-align: center;
+		color: rgb(89, 205, 255);
+		background-color: red;
+		width: 70px;
+		height: 40px;
+		border-radius: 5px;
+		border-color: rgb(89, 205, 255);
+		transition: 1s;
+	}
+
+.alefa:hover
+	{
+		border-color: rgb(89, 205, 255);
+		background-color: black;
+		color: rgb(89, 205, 255);
+	}
+
+/*TSY AZO KITIHINA*/
+
+/*debut 2nd_degre*/
+
+h1
+{
+    color: rgb(89, 205, 255);;
+}
+
+.affiche
+{
+    text-align: right;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #a2af77;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.affiche02
+{
+	height: 30px;
+	text-align: right;
+    width: 100%;
+    border: none;
+    background-color: #a2af77;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.abc
+{
+	text-align: center;
+	width: 60px;
+	height: 18px;
+}
+.button
+{
+    word-spacing: 30px;
+}
+
+.bokotra
+{
+    border: none;
+    background-color: rgb(59, 54, 54);
+    width: 65px;
+    height: 50px;
+    margin-bottom: 2px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@keyframes manaitry
+{
+    0%{font-size: 0%}
+    50%{font-size: 50%}
+    100%{font-size: 100%}
+}
+.kajikajy *
+{
+	padding: 0;
+	margin: 0;
+}
+.kajikajy
+{
+    width: 270px;
+    margin: auto;
+    background-color: dimgrey;
+    padding: 10px;
+	border-radius: 10px;
+	margin-top: 30px;
+    display: inline-block;
+    animation: manaitry 0.5s ease-out ;
+}
+
+p
+{
+    animation: manaitry 0.4s ease-out ;
+}
+
+.coeff
+{
+    display: inline-block;
+}
+
+
+
+/*SLIDER INDEX*/
+#btn
+	{
+		position: absolute;
+		top: 108%;
+		left: 41%;
+		margin: 10px 0 0 0;
+	}
+
+
+#prev, #next, #pp
+	{
+		width: 70px;
+		height: 70px;
+		border-radius: 200px;
+		filter: opacity(50%);
+		color: lightskyblue;
+		background: black;
+		font-size: 20px;
+	}
+
+#gorisa
+	{
+		margin-top: 500px; 
+		width: 100%;
+		margin: auto;
+		overflow: hidden;
+
+	}
+
+#migorisa
+	{
+		display: flex;
+		width: 100%;
+		height: 480px;
+	}

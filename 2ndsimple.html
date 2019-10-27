@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2nd_simple</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1300px)" href="style/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="style/phone.css">
+	<link rel="shortcut icon" href="logo/icon.png">
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div id="change"></div>
+			<div>
+				<a href="index.html"><img id="logo" title="Aller a l'accueil" alt="Logo Maths' Aho" src="logo/logo.png"></a>
+				<div id="auteur">
+					<h3>En colaboration avec:</h3>
+					<ul>
+						<li>RAZAFIMAHATRATRA Andrianina Lionnel</li>
+						<li>RAKOTONIRINA Aldo Luc Chirac</li>
+						<li>TSIAFADRAY Zidane Swaters Paters</li>
+					</ul>
+				</div>
+			</div>
+	</header>
+	<nav>
+		<div class="btn1">
+			<span></span>
+		</div>
+		<div class="menu11 nav_c">
+			<a class="menu" href="index.html">Sary miovaova</a>
+			<a href="2ndsimple.html">Ekasiona JS</a>
+			<a href="2ndjq.html">Ekasiona JQ</a>
+			<a href="4inconnus.html">Ekasiona 4</a>
+		</div>
+		<ul>
+			<li><a href="index.html" title="Accueil">Sary miovaova</a></li>
+			<li>
+				<a class="menu" href="#" title="Equation 2nd degrés">Ekasiona faha-2 JS</a>
+				<ul>
+					<li><a class="menu" href="#" title="Equation 2nd degrés">Javascript</a></li>
+					<li><a href="2ndjq.html" title="Equation 2nd degrés">JQuery</a></li>
+				</ul>
+			</li>
+			<li><a href="4inconnus.html" title="Equation à 4 inconnus">Ekasiona tsy fantatra 4</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1>Ekasiona maripana faha-2 JS</h1>
+		<div style="margin-top: 50px">
+			<p>Fenoy ireo lanjan'isa a, b ary c ho an'ny ekasiao <br> ax&#x00b2; + bx + c = 0</p><br><br>
+		</div>
+		<form name="input_form" action="javascript:solution();">
+			<div class="coeff">
+				a= <input class="abc" placeholder="0.00" type="text" name="a1" size="10" required>
+			</div>
+			<div class="coeff">
+				b= <input class="abc" placeholder="0.00" type="text" name="b1" size="10" required>
+			</div>
+			<div class="coeff">
+				c= <input class="abc" placeholder="0.00" type="text" name="c1" size="10" required>
+			</div><br><br><br>
+			<div class="button">
+				<input class="alefa" type="submit" title="calculer" value="Kajina">
+				<input class="alefa" type="button" title="recommencer" value="Averina" onclick="madioabc()"><br><br>
+			</div>
+		</form>
+		<div id="sotie">
+			<p id="valiny"/>
+		</div>
+		<div class="kajikajy">
+			<h3><strong>Fikajiana</strong></h3>
+			<form name="ecran">
+				<input class="affiche">
+				<input class="affiche02">
+			</form>
+			<table>
+				<tr aria-colspan="1,2" >
+					<td colspan="2"><input class="bokotra" type="button" value="AC" onclick="madio()" style="width: 130px"  onmouseover="style='width: 130px; background-color:rgb(30, 27, 27)'" onmouseout="style='width: 130px; background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="⇦" onclick="mamafa()"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="÷" onclick="kajy('/')"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+				</tr>
+				<tr>
+					<td><input class="bokotra" type="button" value="7" onclick="kajy(7)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="8" onclick="kajy(8)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="9" onclick="kajy(9)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="x" onclick="kajy('*')"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+				</tr>
+				<tr>
+					<td><input class="bokotra" type="button" value="4" onclick="kajy(4)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="5" onclick="kajy(5)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="6" onclick="kajy(6)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="+" onclick="kajy('+')"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+				</tr>
+				<tr>
+					<td><input class="bokotra" type="button" value="1" onclick="kajy(1)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="2" onclick="kajy(2)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="3" onclick="kajy(3)"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="-" onclick="kajy('-')"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="bokotra" type="button" value="0" onclick="kajy(0)" style="width: 130px"  onmouseover="style='width: 130px; background-color:rgb(30, 27, 27)'" onmouseout="style='width: 130px; background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="." onclick="kajy('.')"  onmouseover="style='background-color:rgb(30, 27, 27)'" onmouseout="style='background-color:rgb(59, 54, 54)'"></td>
+					<td><input class="bokotra" type="button" value="=" onclick="valiny()" style="background-color:rgb(89, 205, 255)"  onmouseover="style='background-color:rgb(0, 176, 252)'" onmouseout="style='background-color:rgb(89, 205, 255)'"></td>
+				</tr>
+			</table>
+		</div>
+	    <footer>
+	    	<p>Copyright © 2019 Maths' Aho Inc. | All rights reserved.</p>
+	    	<a target="blank" href="http://www.facebook.com"><img class="foot" alt="Logo Facebook" title="Facebook" src="logo/facebook.png"></a>
+	    	<a target="blank" href="http://www.youtube.com"><img class="foot" alt="Logo YouTube" title="Youtube" src="logo/youtube.png"></a>
+	    	<a target="blank" href="http://www.twitter.com"><img class="foot" alt="Logo Twitter" title="Twitter" src="logo/twitter.png"></a>
+	    </footer>
+	</section>
+	<script type="text/javascript" src="js2nd.js"></script>
+</body>
+</html>
